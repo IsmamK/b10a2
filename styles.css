@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('path/to/Inter-Regular.woff2') format('woff2'),
+         url('path/to/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('path/to/Inter-Bold.woff2') format('woff2'),
+         url('path/to/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Miama';
+    src: url('../fonts/Miama-Regular.woff2') format('woff2'),
+         url('../fonts/Miama-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miama';
+    src: url('../fonts/Miama-Bold.woff2') format('woff2'),
+         url('../fonts/Miama-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+
+
+body{
+
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif; /* Fallback to sans-serif if Inter is unavailable */
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 57px 190px;
+}
+
+.logo{
+    color: #E6533C;
+    font-weight: extra-bold;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    
+    align-items: center;
+    gap: 47px;
+   
+}
+
+.home {
+    background-color: #E6533C;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 46px;
+}
+
+.menu-items{
+    text-decoration: none;
+    color: white;
+
+}
+
+.hamburger{
+    display: none;
+}
+
+
+hero{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.hero-heading{
+    font-size: 76px;
+    text-wrap: wrap;
+   
+
+}
+
+.shape {
+    font-family: 'Miama', sans-serif;
+    font-style: italic;
+     
+}
+
+
+.hero-text{
+    opacity: 50%;
+}
+
+.download{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 46px;
+}
+
+.info-1{
+    border-radius: 12px;
+    width: 193px;    
+    text-align: left;
+    padding: 20px;
+    position: absolute;
+    top:322px;
+    left: 1380px;
+    background-color: rgba(0,0,0,0.1);
+    
+}
+.info-1 p{
+    color: white;
+    opacity: 90%;
+   
+    
+}
+
+.info-2{
+    border-radius: 12px;
+    width: 193px;    
+    text-align: left;
+    padding: 20px;
+    position: absolute;
+    top:556px;
+    left: 1000px;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    display: flex;
+    align-items: center;   
+    gap: 20px;
+    
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: #E6533C;
+    width: 40px;
+    height: 40px;
+    opacity: 100%;
+}
+@media screen and (max-width:576px) {
+    .hamburger{
+        display: block;
+        width: 24px;
+        margin-left: 200px;
+    }
+    
+
+    .menu{
+        display: none;
+
+    }
+
+    hero{
+        flex-direction: column;
+        align-items:center ;
+    }
+       
+    .hero-content{
+        width: 352px;
+    }
+
+    
+
+}
